@@ -89,9 +89,11 @@ Following pre-processing, data gathering, data augmentation and  stratified samp
 <<<INSERT IMAGE HERE>>>
   * <b>Adaptive Brightness:</b> Adaptive brightness function randomly brightens the image, this helps in hanling changing lighting conditions
  <<<INSERT IMAGE HERE>>>
- * <b>Image Flip:</b> Image flip generates the mirror reflection of an image and the 
+ * <b>Image Flip:</b> Image flip generates the mirror reflection of an image and the direction of the steering angle is also flipped. This helps in compensating for availability of less data for right turns. 
+ <<<INSERT IMAGE HERE>>>
  
- 
+ <h5>Stratified Sampling</h5>
+  * 
  
  
  
