@@ -76,11 +76,20 @@ Following pre-processing, data gathering, data augmentation and  stratified samp
   * Image is scaled down to 80X80X3 - this helps in reducing training time and it is observed that resizing the image has zero/minimal impact on model performance
  
  <h5>Data Gathering</h5>
+ 
   * Data from Track-2 is collected in forward and reverse driving
   * Track-2 has more turns compared to Track-1. This helps in getting more data with driving angles that are >>0 unline the data provided
 <<<INSERT IMAGE HERE>>>
   * Track-1 reverse data is also collected however, the data has no impact when used along with Track-2 data
-
+  
+ <h5>Data Augmentation</h5>
+  
+  Following data augmentation techniques helped in generalizing the model
+  * <b>Affine Transformation:</b> Affine transformation shifts the image direction (there by relative driving angle) which provides more data with steering angle >>0.0
+<<<INSERT IMAGE HERE>>>
+  * <b>Adaptive Brightness:</b> Adaptive brightness function randomly brightens the image, this helps in hanling changing lighting conditions
+ <<<INSERT IMAGE HERE>>>
+ * <b>Image Flip:</b> Image flip generates the mirror reflection of an image and the 
  
  
  
