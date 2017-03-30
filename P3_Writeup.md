@@ -67,6 +67,19 @@ elu() non-linearity
 dense(1) - regression head that calculates steering angle
 
 <h4>Is the creation of the training dataset and training process documented?</h4> 
+Following pre-processing, data gathering, data augmentation and  stratified sampling strategies are followed to make the model work:
+ 
+ <h5>Pre-processing</h5>
+  
+  * The unnecessary top and bottom parts of image are stripped to reduce the noise in learning
+  <<<INSERT IMAGE HERE>>>
+  * Image is scaled down to 80X80X3 - this helps in reducing training time and it is observed that resizing the image has zero/minimal impact on model performance
+ 
+ <h5>Data Gathering</h5>
+  * Data from Track-2 is collected in forward and reverse driving
+  * Track-2 has more turns compared to Track-1. This helps in getting more data with driving angles that are >>0 unline the data provided
+<<<INSERT IMAGE HERE>>>
+  * Track-1 reverse data is also collected however, the data has no impact when used along with Track-2 data
 
  
  
