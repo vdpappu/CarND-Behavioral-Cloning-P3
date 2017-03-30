@@ -66,7 +66,7 @@ elu() non-linearity
 
 dense(1) - regression head that calculates steering angle
 
-<h4>Is the creation of the training dataset and training process documented?</h4>
+<h4>Is the creation of the training dataset and training process documented?</h4> 
 
  
  
