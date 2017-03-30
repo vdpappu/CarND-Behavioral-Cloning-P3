@@ -17,7 +17,7 @@ Submission includes following files:
   * drive.py for driving the car in autonomous mode
   * model.h5 containing a trained convolution neural network
   * P3_Writeup.md or summarizing the results
-  * additional_data.py and dataPreparation.py contains code needed for loading data
+  * additional_data.py and dataPreparation.py contains code needed for loading data
 
 <h3>Quality of Code</h3>
 
