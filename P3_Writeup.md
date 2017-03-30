@@ -30,4 +30,7 @@ A deep neural netwok with stack of convolution and dense layers is used for trai
 <h4>Has an attempt been made to reduce overfitting of the model?</h4>
 
 Overfitting is handled at two levels:
+
  * Network level - Dropout layers are added to ensure regularization of weights. This helps in reducing overfitting
+ * Data Level - Choice of additional data, simulation steps helps in reducing overfitting. Details of data collection and simulation stratigies are explained in further sections
+
