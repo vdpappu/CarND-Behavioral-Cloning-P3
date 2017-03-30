@@ -1,5 +1,13 @@
 <h2>Behavioral Cloning</h2>
 
+[//]: # (Image References)
+
+[image1]: ./images/Strip_Image.jpg
+[image2]: ./images/Affine.jpg
+[image3]: ./images/Brightness.jpg
+[image4]: ./images/Flip.jpg
+
+
 <h3>Required Files</h3>
 
 <h4>Are all required files submitted?</h4>
@@ -72,7 +80,8 @@ Following pre-processing, data gathering, data augmentation and  stratified samp
  <h5>Pre-processing</h5>
   
   * The unnecessary top and bottom parts of image are stripped to reduce the noise in learning
-  <<<INSERT IMAGE HERE>>>
+  ![alt text][image1]
+  
   * Image is scaled down to 80X80X3 - this helps in reducing training time and it is observed that resizing the image has zero/minimal impact on model performance
  
  <h5>Data Gathering</h5>
@@ -85,11 +94,14 @@ Following pre-processing, data gathering, data augmentation and  stratified samp
   
   Following data augmentation techniques helped in generalizing the model
   * <b>Affine Transformation:</b> Affine transformation shifts the image direction (there by relative driving angle) which provides more data with steering angle >>0.0
-<<<INSERT IMAGE HERE>>>
+![alt text][image2]
+
   * <b>Adaptive Brightness:</b> Adaptive brightness function randomly brightens the image, this helps in hanling changing lighting conditions
- <<<INSERT IMAGE HERE>>>
+ ![alt text][image3]
+
  * <b>Image Flip:</b> Image flip generates the mirror reflection of an image and the direction of the steering angle is also flipped. This helps in compensating for availability of less data for right turns. 
- <<<INSERT IMAGE HERE>>>
+ ![alt text][image4]
+
  
  <h5>Stratified Sampling</h5>
   
