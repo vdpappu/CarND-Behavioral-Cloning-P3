@@ -93,8 +93,19 @@ Following pre-processing, data gathering, data augmentation and  stratified samp
  <<<INSERT IMAGE HERE>>>
  
  <h5>Stratified Sampling</h5>
-  * 
+  
+  Applying above mentioned data augmentation techniques have helped generalizing the model. However, all the augmentation techniques are not applied on entire data set. A stratified approach is taken in image augmentation
+  * Affine transformation is used on 35% of training data
+  * Adaptive brightness is used on 35% of training data
+  * No data augmentation is applied on rest of 30% of training data
+  
+  After applying above augmentations, image flip is applied on 30% of the data. Percentage of samples on which the flip has to be applied is experimented and chosen. The intent of image flip is to compensate less right turn data and over flipping drifts car towards right. 
+  
+ <h3>Simulation</h3>
  
+  <h3>Is the car able to navigate correctly on test data?</h3>
+  
+   Car moves as specified in the requirement. The navigation using the trained model is recorded and saved to "recording.mp4"
  
  
  
