@@ -78,8 +78,7 @@ Following pre-processing, data gathering, data augmentation and  stratified samp
  <h5>Data Gathering</h5>
  
   * Data from Track-2 is collected in forward and reverse driving
-  * Track-2 has more turns compared to Track-1. This helps in getting more data with driving angles that are >>0 unline the data provided
-<<<INSERT IMAGE HERE>>>
+  * Track-2 has more turns compared to Track-1. This helps in getting more data with driving angles that are not close to zero unlike the data provided
   * Track-1 reverse data is also collected however, the data has no impact when used along with Track-2 data
   
  <h5>Data Augmentation</h5>
